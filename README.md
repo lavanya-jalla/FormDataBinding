@@ -1,9 +1,13 @@
 ## Spring MVC — Form Data Binding (Thymeleaf)
+
 A simple Spring MVC application demonstrating form data binding using Thymeleaf, including:
 
 Displaying a Student Form
+
 Binding input fields to a model
+
 Handling POST submission
+
 Showing confirmation with submitted data
 
 ## Features
@@ -47,9 +51,13 @@ Submit
 ## Technologies Used
 
 Java 17+
+
 Spring Boot / Spring MVC
+
 Thymeleaf
+
 Maven
+
 HTML5
 
 ## Output Flow
