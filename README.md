@@ -1,26 +1,24 @@
 ## Spring MVC — Form Data Binding (Thymeleaf)
 
-A simple Spring MVC application demonstrating form data binding using Thymeleaf, including:
-
-Displaying a Student Form
-
-Binding input fields to a model
-
-Handling POST submission
-
+This project demonstrates binding form data fromtextbox, dropdown, radio buttons, and checkboxes in a Spring MVC application using Thymeleaf.
 Showing confirmation with submitted data
 
 ## Features
 
-✔ Spring MVC Controller
+Capture student data from a form
+Fields include:
 
-✔ Thymeleaf Form Binding
+First name (textbox)
 
-✔ ModelAttribute Usage
+Last name (textbox)
 
-✔ Two-way Data Binding
+Country (dropdown)
 
-✔ Form Submission → Confirmation Page
+Favorite Languages (check boxes)
+
+Favorite Operating System (radio button)
+
+Display submitted data on a result page Spring MVC + Thymeleaf integration
 
 ## Project Structure
 
