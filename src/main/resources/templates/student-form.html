@@ -3,15 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <title>Form Binding</title>
+<link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
+
+
 <body>
+
+<div class="form-container">
 <h1>Student Form</h1>
+
 <form th:action="@{/processStudentForm}" th:object="${student}" method="post">
-First Name:<input type="text" th:field="*{firstName}"/>
-<br><br>
-Last Name:<input type="text" th:field="*{lastName}"/>
-<br><br>
- <button type="submit">Submit</button>
+
+    <label>First Name:</label>
+    <input type="text" th:field="*{firstName}" /><br>
+
+    <label>Last Name:</label>
+    <input type="text" th:field="*{lastName}" /><br>
+
+    <label>Favourite Programming Language:</label>
+    <div class="option-group" th:each="lang : ${languages}">
+        <input type="checkbox" th:field="*{favLang}" th:value="${lang}" />
+        <span th:text="${lang}"></span>
+    </div>
+<br>
+    <label>Favourite OS:</label>
+    <div class="option-group">
+        <input type="radio" th:field="*{favOS}" th:value="Windows" /> Windows <br>
+        <input type="radio" th:field="*{favOS}" th:value="Linux" /> Linux <br>
+        <input type="radio" th:field="*{favOS}" th:value="Mac" /> Mac <br>
+    </div>
+<br>
+    <label>Select Country:</label>
+    <select th:field="*{country}">
+        <option th:each="tempCountry : ${countries}"
+                th:value="${tempCountry}"
+                th:text="${tempCountry}">
+        </option>
+    </select>
+<br>
+<br>
+    <button type="submit">Submit</button>
 </form>
+</div>
+
 </body>
 </html>

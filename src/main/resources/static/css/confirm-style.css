@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 40px;
+}
+
+.confirm-box {
+    background: white;
+    width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.value {
+    font-weight: bold;
+    color: #0073e6;
+}
+
+.line {
+    margin: 15px 0;
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    font-size: 18px;
+}

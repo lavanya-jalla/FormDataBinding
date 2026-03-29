@@ -3,13 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Data Binding</title>
+
+<link rel="stylesheet" th:href="@{/css/confirm-style.css}" />
+
 </head>
 <body>
 
-<h1>
-    The Student is Confirmed:
-    <span th:text="${student.firstName + ' ' + student.lastName}"></span>
-</h1>
-<br>
+<div class="confirm-box">
+
+    <h1>
+        The Student is Confirmed:
+        <span class="value" th:text="${student.firstName + ' ' + student.lastName}"></span>
+    </h1>
+
+    <div class="line">
+        Country:
+        <span class="value" th:text="${student.country}"></span>
+    </div>
+
+    <div class="line">
+        Favourite Language:
+        <span class="value" th:text="${student.favLang}"></span>
+    </div>
+
+    <div class="line">
+        Favourite OS:
+        <span class="value" th:text="${student.favOS}"></span>
+    </div>
+
+</div>
+
 </body>
 </html>
